@@ -1,4 +1,5 @@
 *.class
 StdIn.java
 StdOut.java
+StdRandom.java
 

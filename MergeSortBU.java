@@ -1,4 +1,3 @@
-import java.util.Map;
 
 /**
  * @author Satyajit
@@ -32,7 +31,7 @@ public class MergeSortBU {
     public static void sort(Comparable[] a) {
         int n = a.length;
         Comparable[] aux = new Comparable[n];
-        for(int sz=1; sz < n; sz=2*sz) { //sz = size of sub arr, doubles each time = lg N 
+        for(int sz=1; sz < n; sz=2*sz) { //sz = size of sub arr, doubles each time = lg N
             for (int lo = 0; lo < n-sz; lo=lo+2*sz) {
                 int hi = Math.min(lo+(2*sz)-1, n-1);
                 int mid = lo+sz-1;
