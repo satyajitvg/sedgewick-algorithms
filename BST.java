@@ -287,7 +287,6 @@ public class BST<Key extends Comparable<Key>, Value> {
         StdOut.println(st.min());
         st.delete("a");
         StdOut.println(st.min());
-
      }
 
 }
