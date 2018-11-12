@@ -17,6 +17,8 @@ public class LinkedQueue<Item> implements Iterable<Item> {
 
     public boolean isEmpty() { return n == 0;}
 
+    public int size() {return n;}
+
     public void enqueue(Item item) {
         Node oldLast = last;
         last = new Node();
