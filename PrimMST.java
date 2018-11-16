@@ -1,4 +1,4 @@
-/**
+/** Eager prim mst
  * @author Satyajit
  */
 public class PrimMST {
@@ -14,7 +14,8 @@ public class PrimMST {
         marked = new boolean[G.V()];
         pq = new IndexMinPQ<Double>(G.V());
 
-        for (int v = 0; v < G.V(); v++) distTo[v] = Double.POSITIVE_INFINITY;
+        for (int v = 0; v < G.V(); v++)
+            distTo[v] = Double.POSITIVE_INFINITY;
         for (int v = 0; v < G.V(); v++) {
             if (!marked[v])
                 prim(G, v);
@@ -31,6 +32,9 @@ public class PrimMST {
         }
     }
 
+    // scan edges adjacent to vertex
+    // if other endpoint vertex has not been scanned before
+    // add vertex to pq if shorter edge found
     private void scan(EdgeWeightedGraph G, int v) {
         marked[v] = true;
         for (Edge e: G.adj(v)) {

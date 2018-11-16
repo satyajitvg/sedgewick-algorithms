@@ -5,7 +5,7 @@
  * @author Satyajit
  */
 public class LazyPrimMST {
-    private boolean[] marked;
+    private boolean[] marked; // to ensure that we visit each vertex only once
     private LinkedQueue<Edge> mst;
     private double weight;
     private MinPQ<Edge> pq;
