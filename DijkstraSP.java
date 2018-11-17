@@ -1,6 +1,7 @@
 
 
-/** Shortest paths for directed graphs (can contain cycles)
+/** Shortest paths for directed weighted graphs
+ * Can contain cylles
  * with NON negative edges weights
  * @author Satyajit
  */

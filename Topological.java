@@ -19,6 +19,18 @@ public class Topological {
         }
     }
 
+    public Topological(EdgeWeightedDigraph G) {
+        DirectedCycle finder = new DirectedCycle(G);
+        if (!finder.hasCycle()) {
+            DepthFirstOrder dfsOrder = new DepthFirstOrder(G);
+            order = dfsOrder.reversePost();
+            rank = new int[G.V()];
+            int i = 0;
+            for (int v: order)
+                rank[v] = i++;
+        }
+    }
+
     public Iterable<Integer> order() {
         return order;
     }
