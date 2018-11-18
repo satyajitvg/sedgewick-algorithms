@@ -1,8 +1,9 @@
 
 
 /** Shortest paths for directed weighted graphs
- * Can contain cylles
+ * Can contain cyles
  * with NON negative edges weights
+ * O(E LogV)
  * @author Satyajit
  */
 public class DijkstraSP {

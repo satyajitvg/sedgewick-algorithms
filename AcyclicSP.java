@@ -1,4 +1,7 @@
-/**
+/** Shortest path in DAG
+ * Edge weights can be negative
+ * Sort graph topologically, consider vertices in topological order and relax edges
+ * linear time -> O(E + V)
  * @author Satyajit
  */
 public class AcyclicSP {
