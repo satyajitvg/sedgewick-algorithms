@@ -1,7 +1,7 @@
 
 
 /** Shortest paths for directed weighted graphs
- * Can contain cyles
+ * Can contain cycles
  * with NON negative edges weights
  * O(E LogV)
  * @author Satyajit

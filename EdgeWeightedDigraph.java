@@ -32,7 +32,7 @@ public class EdgeWeightedDigraph {
 
     public int E() { return E;}
 
-    private void addEdge(DirectedEdge e) {
+    public void addEdge(DirectedEdge e) {
         int v = e.from();
         int w = e.to();
         adj[v].add(e);
