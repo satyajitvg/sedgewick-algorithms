@@ -1,5 +1,5 @@
 /**
- * Shortst path for graphs with
+ * Shortest path for graphs with
  * negative edges as long as there are no negative cycles
  *
  * @author Satyajit
@@ -34,7 +34,7 @@ public class BellmanFordSP {
         }
     }
 
-    // relax v and put other endpints on q if changed
+    // relax v and put other endpoints on q if changed
     private void relax(EdgeWeightedDigraph G, int v) {
         for (DirectedEdge e: G.adj(v)) {
             int w = e.to();

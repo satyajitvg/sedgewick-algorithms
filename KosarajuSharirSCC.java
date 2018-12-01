@@ -1,4 +1,6 @@
 /** Strongly connected components in directed graph
+ * 1. Run DFS on reverse Graph to get reverse post ordered vertices
+ * 2. run dfs on vertices
  * @author Satyajit
  */
 public class KosarajuSharirSCC {
